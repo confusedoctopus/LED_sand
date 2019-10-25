@@ -46,8 +46,8 @@ int main(int argc, char **argv) {
 
 	// Initialize LED matrix defaults
 	memset(&options, 0, sizeof(options));
-	options.rows         = 64;
-	options.cols         = 64;
+	options.rows         = 32;
+	options.cols         = 32;
 	options.chain_length = 1;
 
 	// Parse command line input.  --led-help lists options!
