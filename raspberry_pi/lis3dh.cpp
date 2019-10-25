@@ -67,7 +67,7 @@ const void Adafruit_LIS3DH::accelRead(int *x, int *y, int *z) {
 	write(i2c_fd, buf, 1);
 	read(i2c_fd, &buf, 6);
 	*x = (buf[0] | ((int)buf[1] << 8));
-	*y = (buf[2] | ((int)buf[3] << 8));
+	*y = (buf[2] | ((int)buf[3] << 8) * -1);
 	*z = (buf[4] | ((int)buf[5] << 8));
 }
 
